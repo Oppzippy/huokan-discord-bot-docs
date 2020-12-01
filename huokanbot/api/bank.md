@@ -75,7 +75,5 @@ The response will be identical to `/v1/bank/deposit/{id}`.
 
 ## GET /v1/bank/deposit/{id}
 
-**Not yet implemented**
-
 This endpoint may be used over `GET /v1/bank/deposit?id={id}` for convenience when id is the only filter being used. The response will be the first element of `GET /v1/bank/deposit`'s bankDeposits array or status code 404 if the bank deposit does not exist.
 
