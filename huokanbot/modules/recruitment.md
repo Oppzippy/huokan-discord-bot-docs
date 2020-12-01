@@ -1,4 +1,4 @@
-# Invite Leaderboard Module
+# Recruitment Module
 [Brackets] will indicate optional arguments in commands on this page.
 
 ## Requirements
