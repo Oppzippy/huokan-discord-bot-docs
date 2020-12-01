@@ -10,30 +10,28 @@ The addon's output is a compressed (deflate) and base 64 encoded JSON object. So
 3. Parse JSON
 
 The output will follow this schema. Note that it is intended to be human readable and is not valid json or typescript.
-```
+```ts
 {
-	bankGuild: {
-		name: string
-		realm: string
-	}
-	latestDeposit: {
-		player: {
-			name: string
-			realm: string
-		}
-		copper: integer
-		timestamp: ISO 8601 timestamp
-	}
-	previousDeposits: [
-		{
-			player: {
-				name: string
-				realm: string
-			}
-			copper: integer
-		}
-	]
-}
+    bankGuild: {
+        name: string;
+        realm: string;
+    };
+    latestDeposit: {
+        player: {
+            name: string;
+            realm: string;
+        };
+        copper: number;
+        timestamp: string; // ISO 8601 timestamp
+    };
+    previousDeposits: {
+        player: {
+            name: string;
+            realm: string;
+        };
+        copper: number;
+    }[];
+};
 ```
 
 The meaning of the data is as follows:
