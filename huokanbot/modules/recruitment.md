@@ -10,6 +10,8 @@ The bot requires some permissions for this module to function.
 
 ## Usage
 
+The bot will automatically track all invite links created after 10:37pm EST on January 22, 2021. Any invite links created before then that were already tracked will remain tracked, but no invite links older than that date may be added.
+
 `!inviteleaderboard [--size 1-50] [--dynamic] [--startDate datetime] [--endDate datetime] [--cycle days]`
 Available anyone with Manage Server permission plus Moderators.
 - `--size`: Number of recruiters to show on the leaderboard.
