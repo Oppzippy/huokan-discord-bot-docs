@@ -7,3 +7,6 @@
 ** [Recruitment](/huokanbot/api/recruitment.md)
 * Huokan Advertiser Tools
 ** [Bank Deposit](/huokan-advertiser-tools/bank-deposit.md)
+* Huokan Gold Logger
+** [Storage](/huokan-gold-logger/schema.md)
+** [Schema](/huokan-gold-logger/storage.md)
