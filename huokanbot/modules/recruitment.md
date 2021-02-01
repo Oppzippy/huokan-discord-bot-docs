@@ -10,9 +10,6 @@ The bot requires some permissions for this module to function.
 
 ## Usage
 
-`!invitelink`
-Available to everyone. Creates an invite link to the server's invite channel (or the current channel if not specified) that will be tracked by the bot.
-
 `!inviteleaderboard [--size 1-50] [--dynamic] [--startDate datetime] [--endDate datetime] [--cycle days]`
 Available anyone with Manage Server permission plus Moderators.
 - `--size`: Number of recruiters to show on the leaderboard.
