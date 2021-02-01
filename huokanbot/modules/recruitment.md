@@ -4,15 +4,9 @@
 ## Requirements
 The bot requires some permissions for this module to function.
 - Manage Server (view invite link usage)
-- Create Invite (the bot creates invite links for recruiters)
 - Send Messages
 - Embed Links (leaderboards)
 - Manage Messages (the bot deletes your command after posting a leaderboard)
-
-## Setup
-`!invitechannel [#channel]`
-Only usable by server admins. Sets the channel that invite links created with `!invitelink` will point to.
-If the channel is not specified, the channel the command was posted in will be used.
 
 ## Usage
 
