@@ -27,3 +27,16 @@ Returns
 	timestamp: string; // ISO 8601
 }[]
 ```
+
+## GET /v1/recruitment/user/{id}/recruiter
+
+Returns the first recruiter to invite a particular a user.
+
+Returns
+```ts
+{
+	inviteLink: string;
+	inviter: string; // discord user id
+	timestamp: string; // ISO 8601
+}
+```
