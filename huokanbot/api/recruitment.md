@@ -36,7 +36,7 @@ Returns
 ```ts
 {
 	inviteLink: string;
-	inviter: string; // discord user id
+	inviterDiscordId: string;
 	timestamp: string; // ISO 8601
 }
 ```
