@@ -1,26 +1,42 @@
 # Huokan Gold Logger Events
 
+**Money is stored as copper.**
+
+## Structure
+All events will have the following fields at a minimum.
+```ts
+{
+	character: {
+		name: string;
+		realm: string;
+	};
+	prevMoney: number;
+	newMoney: number;
+	timestamp: timestamp; // ISO 8601
+}
+```
+
 ## Events
 
-- AUCTION_HOUSE_BID
-- AUCTION_HOUSE_COMMODITY_BUY
-- AUCTION_HOUSE_DEPOSIT
-- AUCTION_HOUSE_SELL
-- BMAH_BID
-- FLIGHT_PATH
-- GUILD_BANK_DEPOSIT
-- GUILD_BANK_WITHDRAW
-- LFG_COMPLETION_REWARD
-- LOOT
-- MAIL_IN
-- MAIL_OUT
-- QUEST_REWARD
-- REPAIR
-- TRADE
-- UNKNOWN
-- VENDOR_BUY
-- VENDOR_BUYBACK
-- VENDOR_SELL
+- [AUCTION_HOUSE_BID](#AUCTION_HOUSE_BID)
+- [AUCTION_HOUSE_COMMODITY_BUY](#AUCTION_HOUSE_COMMODITY_BUY)
+- [AUCTION_HOUSE_DEPOSIT](#AUCTION_HOUSE_DEPOSIT)
+- [AUCTION_HOUSE_SELL](#AUCTION_HOUSE_SELL)
+- [BMAH_BID](#BMAH_BID)
+- [FLIGHT_PATH](#FLIGHT_PATH)
+- [GUILD_BANK_DEPOSIT](#GUILD_BANK_DEPOSIT)
+- [GUILD_BANK_WITHDRAW](#GUILD_BANK_WITHDRAW)
+- [LFG_COMPLETION_REWARD](#LFG_COMPLETION_REWARD)
+- [LOOT](#LOOT)
+- [MAIL_IN](#MAIL_IN)
+- [MAIL_OUT](#MAIL_OUT)
+- [QUEST_REWARD](#QUEST_REWARD)
+- [REPAIR](#REPAIR)
+- [TRADE](#TRADE)
+- [UNKNOWN](#UNKNOWN)
+- [VENDOR_BUY](#VENDOR_BUY)
+- [VENDOR_BUYBACK](#VENDOR_BUYBACK)
+- [VENDOR_SELL](#VENDOR_SELL)
 
 ### AUCTION_HOUSE_BID
 Occurs when bidding or buying an item on the auction house that isn't a commodity.
