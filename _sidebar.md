@@ -1,6 +1,7 @@
 * [Introduction](/)
 * Discord Bot Modules
 ** [Bank](/huokanbot/modules/bank.md)
+** [Boost Request](/huokanbot/modules/boost-request.md)
 ** [Recruitment](/huokanbot/modules/recruitment.md)
 * Discord Bot API
 ** [Bank](/huokanbot/api/bank.md)
