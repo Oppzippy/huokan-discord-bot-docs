@@ -36,7 +36,7 @@ Lists all advertiser privileges.
 
 **!boostrequest setprivileges \<@role> \<weight> \<delayInSeconds>**  
 Assigns privileges to an advertiser role.  
-\<weight>: When randomly choosing an advertiser, the weight will be applied to advertisers of this role. This can be any positive number greater than 0.
+\<weight>: When randomly choosing an advertiser, the weight will be applied to advertisers of this role. This can be any positive number greater than 0.  
 \<delayInSeconds>: Time the role must wait after the creation of a boost request in order to be able to claim it. All advertisers with roles that must wait the same amount of time are grouped together, and whichever group has the lowest delay will be chosen from. This must be a positive integer.
 
 **!boostrequest removeprivileges \<@role>**  
