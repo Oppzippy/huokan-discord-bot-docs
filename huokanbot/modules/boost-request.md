@@ -47,11 +47,12 @@ Removes privileges to use the boost request bot from a role.
 **!boostrequest rolediscounts**  
 Lists all role discounts.
 
-**!boostrequest setrolediscount \<@role> \<discount%>**  
-Sets a discount for all boost requests from a role. Example: !boostrequest addrolediscount @Booster 10%
+**!boostrequest setrolediscount \<@role> \<boostType> \<discount%>**  
+Sets a discount for all boost requests from a role. `boostType` can be anything, but the names must be consistent acrcoss roles in order for the best discount to be selected for people with more than one role that provides discounts. Basically, don't call it `mythic+` for one role and `m+` for another. Quotes can be used if there are spaces in the name of the boost type.  
+Example: !boostrequest setrolediscount @Booster "Castle Nathria" 10%
 
-**!boostrequest removerolediscount \<@role>**  
-Removes the discount for a role.
+**!boostrequest removerolediscount \<@role> \<boostType>**  
+Removes the discount for a role. Example: !boostrequest removerolediscount @Booster Mythic+
 
 ### Steal Credits
 
