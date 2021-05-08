@@ -1,11 +1,11 @@
-# boostrequestbotapi.DefaultApi
+# boostrequestbotapi.UsersApi
 
 All URIs are relative to *https://boostrequestbot.oppzippy.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**users_user_id_steal_credits_get**](DefaultApi.md#users_user_id_steal_credits_get) | **GET** /users/{userId}/stealCredits | 
-[**users_user_id_steal_credits_patch**](DefaultApi.md#users_user_id_steal_credits_patch) | **PATCH** /users/{userId}/stealCredits | 
+[**users_user_id_steal_credits_get**](UsersApi.md#users_user_id_steal_credits_get) | **GET** /users/{userId}/stealCredits | 
+[**users_user_id_steal_credits_patch**](UsersApi.md#users_user_id_steal_credits_patch) | **PATCH** /users/{userId}/stealCredits | 
 
 
 # **users_user_id_steal_credits_get**
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 ```python
 import time
 import boostrequestbotapi
-from boostrequestbotapi.api import default_api
+from boostrequestbotapi.api import users_api
 from boostrequestbotapi.model.error_response import ErrorResponse
 from boostrequestbotapi.model.user_steal_credits import UserStealCredits
 from pprint import pprint
@@ -44,7 +44,7 @@ configuration.api_key['ApiKeyAuth'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with boostrequestbotapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = default_api.DefaultApi(api_client)
+    api_instance = users_api.UsersApi(api_client)
     user_id = "userId_example" # str | 
 
     # example passing only required values which don't have defaults set
@@ -52,7 +52,7 @@ with boostrequestbotapi.ApiClient(configuration) as api_client:
         api_response = api_instance.users_user_id_steal_credits_get(user_id)
         pprint(api_response)
     except boostrequestbotapi.ApiException as e:
-        print("Exception when calling DefaultApi->users_user_id_steal_credits_get: %s\n" % e)
+        print("Exception when calling UsersApi->users_user_id_steal_credits_get: %s\n" % e)
 ```
 
 
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 ```python
 import time
 import boostrequestbotapi
-from boostrequestbotapi.api import default_api
+from boostrequestbotapi.api import users_api
 from boostrequestbotapi.model.generic_response import GenericResponse
 from boostrequestbotapi.model.patch_steal_credits_request import PatchStealCreditsRequest
 from boostrequestbotapi.model.error_response import ErrorResponse
@@ -122,7 +122,7 @@ configuration.api_key['ApiKeyAuth'] = 'YOUR_API_KEY'
 # Enter a context with an instance of the API client
 with boostrequestbotapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = default_api.DefaultApi(api_client)
+    api_instance = users_api.UsersApi(api_client)
     user_id = "userId_example" # str | 
     patch_steal_credits_request = PatchStealCreditsRequest(
         credits=1,
@@ -134,7 +134,7 @@ with boostrequestbotapi.ApiClient(configuration) as api_client:
         api_response = api_instance.users_user_id_steal_credits_patch(user_id)
         pprint(api_response)
     except boostrequestbotapi.ApiException as e:
-        print("Exception when calling DefaultApi->users_user_id_steal_credits_patch: %s\n" % e)
+        print("Exception when calling UsersApi->users_user_id_steal_credits_patch: %s\n" % e)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -142,7 +142,7 @@ with boostrequestbotapi.ApiClient(configuration) as api_client:
         api_response = api_instance.users_user_id_steal_credits_patch(user_id, patch_steal_credits_request=patch_steal_credits_request)
         pprint(api_response)
     except boostrequestbotapi.ApiException as e:
-        print("Exception when calling DefaultApi->users_user_id_steal_credits_patch: %s\n" % e)
+        print("Exception when calling UsersApi->users_user_id_steal_credits_patch: %s\n" % e)
 ```
 
 

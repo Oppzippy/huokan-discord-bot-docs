@@ -1,5 +1,7 @@
 # GenericResponse
 
+Default response when an action was completed but no more information is provided.
+
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
