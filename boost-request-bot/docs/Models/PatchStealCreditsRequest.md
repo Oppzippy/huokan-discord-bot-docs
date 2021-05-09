@@ -1,14 +1,10 @@
-# ErrorResponse
-
-Error response.
-
+# PatchStealCreditsRequest
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**status_code** | **int** | HTTP status code. | 
-**error** | **str** | Name of HTTP status code. | 
-**message** | **str** | Description of what went wrong. | 
+**credits** | [**Integer**](integer.md) |  | [default to null]
+**operation** | [**String**](string.md) |  | [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

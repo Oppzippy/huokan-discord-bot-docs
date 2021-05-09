@@ -4,12 +4,12 @@ All URIs are relative to *https://boostrequestbot.oppzippy.com/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**users_user_id_steal_credits_get**](UsersApi.md#users_user_id_steal_credits_get) | **GET** /users/{userId}/stealCredits | 
-[**users_user_id_steal_credits_patch**](UsersApi.md#users_user_id_steal_credits_patch) | **PATCH** /users/{userId}/stealCredits | 
+[**get_user_steal_credits**](UsersApi.md#get_user_steal_credits) | **GET** /users/{userId}/stealCredits | 
+[**update_user_steal_credits**](UsersApi.md#update_user_steal_credits) | **PATCH** /users/{userId}/stealCredits | 
 
 
-# **users_user_id_steal_credits_get**
-> UserStealCredits users_user_id_steal_credits_get(user_id)
+# **get_user_steal_credits**
+> UserStealCredits get_user_steal_credits(user_id)
 
 
 
@@ -45,14 +45,14 @@ configuration.api_key['ApiKeyAuth'] = 'YOUR_API_KEY'
 with boostrequestbotapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = users_api.UsersApi(api_client)
-    user_id = "userId_example" # str | 
+    user_id = "userId_example" # str | User's discord id
 
     # example passing only required values which don't have defaults set
     try:
-        api_response = api_instance.users_user_id_steal_credits_get(user_id)
+        api_response = api_instance.get_user_steal_credits(user_id)
         pprint(api_response)
     except boostrequestbotapi.ApiException as e:
-        print("Exception when calling UsersApi->users_user_id_steal_credits_get: %s\n" % e)
+        print("Exception when calling UsersApi->get_user_steal_credits: %s\n" % e)
 ```
 
 
@@ -60,7 +60,7 @@ with boostrequestbotapi.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user_id** | **str**|  |
+ **user_id** | **str**| User&#39;s discord id |
 
 ### Return type
 
@@ -85,8 +85,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **users_user_id_steal_credits_patch**
-> GenericResponse users_user_id_steal_credits_patch(user_id)
+# **update_user_steal_credits**
+> GenericResponse update_user_steal_credits(user_id, patch_steal_credits_request)
 
 
 
@@ -123,26 +123,18 @@ configuration.api_key['ApiKeyAuth'] = 'YOUR_API_KEY'
 with boostrequestbotapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = users_api.UsersApi(api_client)
-    user_id = "userId_example" # str | 
+    user_id = "userId_example" # str | User's discord id
     patch_steal_credits_request = PatchStealCreditsRequest(
         credits=1,
         operation="+",
-    ) # PatchStealCreditsRequest |  (optional)
+    ) # PatchStealCreditsRequest | 
 
     # example passing only required values which don't have defaults set
     try:
-        api_response = api_instance.users_user_id_steal_credits_patch(user_id)
+        api_response = api_instance.update_user_steal_credits(user_id, patch_steal_credits_request)
         pprint(api_response)
     except boostrequestbotapi.ApiException as e:
-        print("Exception when calling UsersApi->users_user_id_steal_credits_patch: %s\n" % e)
-
-    # example passing only required values which don't have defaults set
-    # and optional values
-    try:
-        api_response = api_instance.users_user_id_steal_credits_patch(user_id, patch_steal_credits_request=patch_steal_credits_request)
-        pprint(api_response)
-    except boostrequestbotapi.ApiException as e:
-        print("Exception when calling UsersApi->users_user_id_steal_credits_patch: %s\n" % e)
+        print("Exception when calling UsersApi->update_user_steal_credits: %s\n" % e)
 ```
 
 
@@ -150,8 +142,8 @@ with boostrequestbotapi.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user_id** | **str**|  |
- **patch_steal_credits_request** | [**PatchStealCreditsRequest**](PatchStealCreditsRequest.md)|  | [optional]
+ **user_id** | **str**| User&#39;s discord id |
+ **patch_steal_credits_request** | [**PatchStealCreditsRequest**](PatchStealCreditsRequest.md)|  |
 
 ### Return type
 
