@@ -35,7 +35,7 @@ Name | Type | Description  | Notes
 
 <a name="updateUserStealCredits"></a>
 # **updateUserStealCredits**
-> GenericResponse updateUserStealCredits(userId, PatchStealCreditsRequest)
+> UserStealCredits updateUserStealCredits(userId, PatchStealCreditsRequest)
 
 
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericResponse**](../Models/GenericResponse.md)
+[**UserStealCredits**](../Models/UserStealCredits.md)
 
 ### Authorization
 

@@ -86,7 +86,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_user_steal_credits**
-> GenericResponse update_user_steal_credits(user_id, patch_steal_credits_request)
+> UserStealCredits update_user_steal_credits(user_id, patch_steal_credits_request)
 
 
 
@@ -98,9 +98,9 @@ Name | Type | Description  | Notes
 import time
 import boostrequestbotapi
 from boostrequestbotapi.api import users_api
-from boostrequestbotapi.model.generic_response import GenericResponse
 from boostrequestbotapi.model.patch_steal_credits_request import PatchStealCreditsRequest
 from boostrequestbotapi.model.error_response import ErrorResponse
+from boostrequestbotapi.model.user_steal_credits import UserStealCredits
 from pprint import pprint
 # Defining the host is optional and defaults to https://boostrequestbot.oppzippy.com/v1
 # See configuration.py for a list of all supported configuration parameters.
@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GenericResponse**](GenericResponse.md)
+[**UserStealCredits**](UserStealCredits.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | The action has been exectuted successfully. |  -  |
+**200** | New number of boost request steal credits available to the user in a JSON object. |  -  |
 **400** | The request schema is invalid. |  -  |
 **401** | API key is invalid. |  -  |
 **500** | Internal server error. |  -  |
