@@ -68,9 +68,6 @@ configuration = boostrequestbotapi.Configuration(
 # Configure API key authorization: ApiKeyAuth
 configuration.api_key['ApiKeyAuth'] = 'YOUR_API_KEY'
 
-# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-# configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
-
 
 # Enter a context with an instance of the API client
 with boostrequestbotapi.ApiClient(configuration) as api_client:
