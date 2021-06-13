@@ -64,3 +64,10 @@ Add boost request steal credits to a user.
 
 **!boostrequest setcredits \<@role> \<credits>**  
 Sets a user's boost request steal credits.
+
+### Roll Logging
+**!boostrequest setrollchannel \<#channel>**
+Sets a channel to log RNG rolls to.
+
+**!boostrequest removerollchannel**
+Stops logging RNG rolls.
