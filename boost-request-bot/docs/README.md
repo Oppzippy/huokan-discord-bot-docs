@@ -7,6 +7,8 @@ All URIs are relative to *https://boostrequestbot.oppzippy.com/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*BoostRequestsApi* | [**createBoostRequest**](Apis/BoostRequestsApi.md#createboostrequest) | **POST** /boostRequests | 
+*BoostRequestsApi* | [**getBoostRequest**](Apis/BoostRequestsApi.md#getboostrequest) | **GET** /boostRequests/{boostRequestId} | 
 *UsersApi* | [**getUserStealCredits**](Apis/UsersApi.md#getuserstealcredits) | **GET** /users/{userId}/stealCredits | 
 *UsersApi* | [**updateUserStealCredits**](Apis/UsersApi.md#updateuserstealcredits) | **PATCH** /users/{userId}/stealCredits | 
 
@@ -14,9 +16,11 @@ Class | Method | HTTP request | Description
 <a name="documentation-for-models"></a>
 ## Documentation for Models
 
+ - [BoostRequest](./Models/BoostRequest.md)
  - [ErrorResponse](./Models/ErrorResponse.md)
  - [GenericResponse](./Models/GenericResponse.md)
  - [PatchStealCreditsRequest](./Models/PatchStealCreditsRequest.md)
+ - [PostBoostRequestsRequest](./Models/PostBoostRequestsRequest.md)
  - [UserStealCredits](./Models/UserStealCredits.md)
 
 
