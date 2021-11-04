@@ -35,7 +35,7 @@ Name | Type | Description  | Notes
 
 <a name="getBoostRequest"></a>
 # **getBoostRequest**
-> getBoostRequest(boostRequestId)
+> BoostRequest getBoostRequest(boostRequestId)
 
 
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-null (empty response body)
+[**BoostRequest**](../Models/BoostRequest.md)
 
 ### Authorization
 
