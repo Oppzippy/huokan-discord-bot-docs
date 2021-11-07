@@ -66,8 +66,18 @@ Add boost request steal credits to a user.
 Sets a user's boost request steal credits.
 
 ### Roll Logging
-**!boostrequest setrollchannel \<#channel>**
+**!boostrequest setrollchannel \<#channel>**  
 Sets a channel to log RNG rolls to.
 
-**!boostrequest removerollchannel**
+**!boostrequest removerollchannel**  
 Stops logging RNG rolls.
+
+### Webhooks
+**!boostrequest setwebhook \<webhookUrl>**  
+Sets a URL that will receive a POST request every time a webhook event occurs. There can only be one webhook set at a time, so if a webhook already exists, it will be replaced with the new url.
+
+**!boostrequest removewebhook**  
+Deactivates webhooks.
+
+**!boostrequest listwebhook**  
+Sends you the webhook url in a direct message.
