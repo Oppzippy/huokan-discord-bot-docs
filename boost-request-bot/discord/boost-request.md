@@ -79,5 +79,5 @@ Sets a URL that will receive a POST request every time a webhook event occurs. T
 **!boostrequest removewebhook**  
 Deactivates webhooks.
 
-**!boostrequest listwebhook**  
+**!boostrequest webhook**  
 Sends you the webhook url in a direct message.
