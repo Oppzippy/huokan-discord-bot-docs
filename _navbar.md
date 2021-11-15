@@ -1,6 +1,6 @@
 * [Introduction](/)
 * Discord Bots
-	* [Recruitment Bot](/huokanbot/modules/recruitment.md)
+	* [Recruitment Bot](/recruitment-bot/discord-bot.md)
 	* [Boost Request Bot](/boost-request-bot/discord/boost-request.md)
 * WoW Addons
 	* [Huokan Advertiser Tools](/huokan-advertiser-tools/bank-deposit.md)
