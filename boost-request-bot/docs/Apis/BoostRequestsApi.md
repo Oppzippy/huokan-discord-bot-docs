@@ -43,7 +43,7 @@ Name | Type | Description  | Notes
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **boostRequestId** | [**UUID**](../Models/.md)| Boost request UUID | [default to null]
+ **boostRequestId** | **UUID**| Boost request UUID | [default to null]
 
 ### Return type
 
