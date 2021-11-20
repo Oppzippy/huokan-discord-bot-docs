@@ -16,6 +16,7 @@ Method | HTTP request | Description
 ### Example
 
 * Api Key Authentication (ApiKeyAuth):
+
 ```python
 import time
 import boostrequestbotapi
@@ -76,6 +77,7 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Number of boost request steal credits available to the user in a JSON object. |  -  |
@@ -92,6 +94,7 @@ Name | Type | Description  | Notes
 ### Example
 
 * Api Key Authentication (ApiKeyAuth):
+
 ```python
 import time
 import boostrequestbotapi
@@ -158,6 +161,7 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | New number of boost request steal credits available to the user in a JSON object. |  -  |

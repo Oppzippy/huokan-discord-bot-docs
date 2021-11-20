@@ -16,6 +16,7 @@ Method | HTTP request | Description
 ### Example
 
 * Api Key Authentication (ApiKeyAuth):
+
 ```python
 import time
 import boostrequestbotapi
@@ -51,6 +52,7 @@ with boostrequestbotapi.ApiClient(configuration) as api_client:
         message="message_example",
         price="price_example",
         advertiser_cut="advertiser_cut_example",
+        discount="discount_example",
         preferred_advertiser_ids=[
             "preferred_advertiser_ids_example",
         ],
@@ -87,6 +89,7 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | The boost request was successfully created. |  -  |
@@ -97,18 +100,20 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_boost_request**
-> get_boost_request(boost_request_id)
+> BoostRequest get_boost_request(boost_request_id)
 
 
 
 ### Example
 
 * Api Key Authentication (ApiKeyAuth):
+
 ```python
 import time
 import boostrequestbotapi
 from boostrequestbotapi.api import boost_requests_api
 from boostrequestbotapi.model.error_response import ErrorResponse
+from boostrequestbotapi.model.boost_request import BoostRequest
 from pprint import pprint
 # Defining the host is optional and defaults to https://boostrequestbot.oppzippy.com/v1
 # See configuration.py for a list of all supported configuration parameters.
@@ -135,7 +140,8 @@ with boostrequestbotapi.ApiClient(configuration) as api_client:
 
     # example passing only required values which don't have defaults set
     try:
-        api_instance.get_boost_request(boost_request_id)
+        api_response = api_instance.get_boost_request(boost_request_id)
+        pprint(api_response)
     except boostrequestbotapi.ApiException as e:
         print("Exception when calling BoostRequestsApi->get_boost_request: %s\n" % e)
 ```
@@ -149,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**BoostRequest**](BoostRequest.md)
 
 ### Authorization
 
@@ -162,8 +168,10 @@ void (empty response body)
 
 
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
+**200** | The boost request exists. |  -  |
 **400** | The request schema is invalid. |  -  |
 **401** | API key is invalid. |  -  |
 **404** | The requested resource could not be found. |  -  |

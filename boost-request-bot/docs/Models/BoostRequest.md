@@ -9,7 +9,6 @@ Name | Type | Description | Notes
 **backendChannelId** | **String** | Discord channel id that the boost request signup message was posted in. | [default to null]
 **backendMessageId** | **String** | Discord message id of the boost request signup message. | [default to null]
 **message** | **String** | What is being requested | [default to null]
-**type** | **String** | Type of boost request. This is used for calculating role discounts, so it should match the names of the role discount boost types. | [optional] [default to null]
 **price** | **String** | Price of the boost request in copper. This is a 64 bit integer represented as a string. | [optional] [default to null]
 **discount** | **String** | Discount in copper on the boost. | [optional] [default to null]
 **advertiserCut** | **String** | Advertiser&#39;s cut for the boost request in copper. This is a 64 bit integer represented as a string. | [optional] [default to null]

@@ -12,9 +12,11 @@ Name | Type | Description | Notes
 **message** | **str** | What is being requested | 
 **created_at** | **datetime** |  | 
 **price** | **str** | Price of the boost request in copper. This is a 64 bit integer represented as a string. | [optional] 
+**discount** | **str** | Discount in copper on the boost. | [optional] 
 **advertiser_cut** | **str** | Advertiser&#39;s cut for the boost request in copper. This is a 64 bit integer represented as a string. | [optional] 
 **preferred_advertiser_ids** | **[str]** | If preferredAdvertiserIds is defined, only advertisers listed here will be eligible to accept the boost request. | [optional] 
 **advertiser_selected_at** | **datetime** |  | [optional] 
+**any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
