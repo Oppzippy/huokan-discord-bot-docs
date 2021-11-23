@@ -52,6 +52,9 @@ with boostrequestbotapi.ApiClient(configuration) as api_client:
         message="message_example",
         price="price_example",
         advertiser_cut="advertiser_cut_example",
+        advertiser_role_cuts={
+            "key": "key_example",
+        },
         discount="discount_example",
         preferred_advertiser_ids=[
             "preferred_advertiser_ids_example",
