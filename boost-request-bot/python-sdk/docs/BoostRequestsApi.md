@@ -1,6 +1,6 @@
 # boostrequestbotapi.BoostRequestsApi
 
-All URIs are relative to *https://boostrequestbot.oppzippy.com/v1*
+All URIs are relative to *https://boostrequestbot.oppzippy.com/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,10 +25,10 @@ from boostrequestbotapi.model.post_boost_requests_request import PostBoostReques
 from boostrequestbotapi.model.error_response import ErrorResponse
 from boostrequestbotapi.model.boost_request import BoostRequest
 from pprint import pprint
-# Defining the host is optional and defaults to https://boostrequestbot.oppzippy.com/v1
+# Defining the host is optional and defaults to https://boostrequestbot.oppzippy.com/v2
 # See configuration.py for a list of all supported configuration parameters.
 configuration = boostrequestbotapi.Configuration(
-    host = "https://boostrequestbot.oppzippy.com/v1"
+    host = "https://boostrequestbot.oppzippy.com/v2"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -118,10 +118,10 @@ from boostrequestbotapi.api import boost_requests_api
 from boostrequestbotapi.model.error_response import ErrorResponse
 from boostrequestbotapi.model.boost_request import BoostRequest
 from pprint import pprint
-# Defining the host is optional and defaults to https://boostrequestbot.oppzippy.com/v1
+# Defining the host is optional and defaults to https://boostrequestbot.oppzippy.com/v2
 # See configuration.py for a list of all supported configuration parameters.
 configuration = boostrequestbotapi.Configuration(
-    host = "https://boostrequestbot.oppzippy.com/v1"
+    host = "https://boostrequestbot.oppzippy.com/v2"
 )
 
 # The client must configure the authentication and authorization parameters

@@ -3,7 +3,7 @@
 <a name="documentation-for-api-endpoints"></a>
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://boostrequestbot.oppzippy.com/v1*
+All URIs are relative to *https://boostrequestbot.oppzippy.com/v2*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -17,6 +17,7 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [BoostRequest](./Models/BoostRequest.md)
+ - [BoostRequestBackendSignupMessage](./Models/BoostRequestBackendSignupMessage.md)
  - [ErrorResponse](./Models/ErrorResponse.md)
  - [GenericResponse](./Models/GenericResponse.md)
  - [PatchStealCreditsRequest](./Models/PatchStealCreditsRequest.md)

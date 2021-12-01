@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **requester_id** | **str** | Discord user id of the request of the boost request. | 
-**backend_channel_id** | **str** | Discord channel id to post the boost request signup message in. | 
+**backend_channel_id** | **str** | Discord channel id to post the boost request signup message in. If exactly one preferred advertiser is set, the message will go to the preferred advertiser&#39;s DMs instead. If the preferred advertiser is then removed, the boost request will be reposted in this channel. | 
 **message** | **str** | What is being requested | 
 **price** | **str** | Price of the boost request in copper. This is a 64 bit integer represented as a string. | [optional] 
 **advertiser_cut** | **str** | Advertiser&#39;s cut for the boost request in copper. This is a 64 bit integer represented as a string. | [optional] 

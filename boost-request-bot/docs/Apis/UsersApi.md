@@ -1,6 +1,6 @@
 # UsersApi
 
-All URIs are relative to *https://boostrequestbot.oppzippy.com/v1*
+All URIs are relative to *https://boostrequestbot.oppzippy.com/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
