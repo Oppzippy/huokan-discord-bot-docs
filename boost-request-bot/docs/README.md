@@ -17,7 +17,6 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [BoostRequest](./Models/BoostRequest.md)
- - [BoostRequestBackendSignupMessage](./Models/BoostRequestBackendSignupMessage.md)
  - [ErrorResponse](./Models/ErrorResponse.md)
  - [GenericResponse](./Models/GenericResponse.md)
  - [PatchStealCreditsRequest](./Models/PatchStealCreditsRequest.md)

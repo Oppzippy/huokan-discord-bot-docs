@@ -7,7 +7,6 @@ Name | Type | Description | Notes
 **requesterId** | **String** | Discord user id of the request of the boost request. | [default to null]
 **backendChannelId** | **String** | Discord channel id to post the boost request signup message in. If exactly one preferred advertiser is set, the message will go to the preferred advertiser&#39;s DMs instead. If the preferred advertiser is then removed, the boost request will be reposted in this channel. | [default to null]
 **isAdvertiserSelected** | **Boolean** |  | [default to null]
-**backendMessages** | [**List**](BoostRequestBackendSignupMessage.md) |  | [optional] [default to null]
 **message** | **String** | What is being requested | [default to null]
 **price** | **String** | Price of the boost request in copper. This is a 64 bit integer represented as a string. | [optional] [default to null]
 **discount** | **String** | Discount in copper on the boost. | [optional] [default to null]

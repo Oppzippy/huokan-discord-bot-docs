@@ -10,7 +10,6 @@ Name | Type | Description | Notes
 **is_advertiser_selected** | **bool** |  | 
 **message** | **str** | What is being requested | 
 **created_at** | **datetime** |  | 
-**backend_messages** | [**[BoostRequestBackendSignupMessage]**](BoostRequestBackendSignupMessage.md) |  | [optional] 
 **price** | **str** | Price of the boost request in copper. This is a 64 bit integer represented as a string. | [optional] 
 **discount** | **str** | Discount in copper on the boost. | [optional] 
 **advertiser_cut** | **str** | Advertiser&#39;s cut for the boost request in copper. This is a 64 bit integer represented as a string. | [optional] 
