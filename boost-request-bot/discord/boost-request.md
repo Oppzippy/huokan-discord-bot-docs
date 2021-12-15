@@ -34,10 +34,11 @@ Removes **ALL** boost request channels from the server. This doesn't delete the 
 **!boostrequest privileges**  
 Lists all advertiser privileges.
 
-**!boostrequest setprivileges \<@role> \<weight> \<delayInSeconds>**  
+**!boostrequest setprivileges \<@role> \<weight> \<delayInSeconds> \[autoSignupDurationInMinutes]**  
 Assigns privileges to an advertiser role.  
 \<weight>: When randomly choosing an advertiser, the weight will be applied to advertisers of this role. This can be any positive number greater than 0.  
-\<delayInSeconds>: Time the role must wait after the creation of a boost request in order to be able to claim it. All advertisers with roles that must wait the same amount of time are grouped together, and whichever group has the lowest delay will be chosen from. This must be a positive integer.
+\<delayInSeconds>: Number of seconds that the role must wait after the creation of a boost request in order to be able to claim it. All advertisers with roles that must wait the same amount of time are grouped together, and whichever group has the lowest delay will be chosen from. This must be a positive integer.  
+\[autoSignupDurationInMinutes]: Maximum number of minutes that advertisers can enable auto signup for. This is also the default if the advertiser does not specify a duration.
 
 **!boostrequest removeprivileges \<@role>**  
 Removes privileges to use the boost request bot from a role.
@@ -81,3 +82,10 @@ Deactivates webhooks.
 
 **!boostrequest webhook**  
 Sends you the webhook url in a direct message.
+
+### Auto Signup
+**/boostrequest autosignup start \[durationInMinutes]**  
+Enables auto signup for the specified duration or the maximum allowed duration if unspecified.
+
+**/boostrequest autosignup stop**
+Disables auto signup immediately.
