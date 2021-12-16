@@ -87,5 +87,5 @@ Sends you the webhook url in a direct message.
 **/boostrequest autosignup start \[durationInMinutes]**  
 Enables auto signup for the specified duration or the maximum allowed duration if unspecified.
 
-**/boostrequest autosignup stop**
+**/boostrequest autosignup stop**  
 Disables auto signup immediately.
