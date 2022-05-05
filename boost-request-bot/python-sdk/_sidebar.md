@@ -3,6 +3,8 @@
 * Docs
 ** [BoostRequest](/boost-request-bot/python-sdk/docs/BoostRequest.md)
 ** [BoostRequestsApi](/boost-request-bot/python-sdk/docs/BoostRequestsApi.md)
+** [DetailedErrorResponse](/boost-request-bot/python-sdk/docs/DetailedErrorResponse.md)
+** [EmbedField](/boost-request-bot/python-sdk/docs/EmbedField.md)
 ** [ErrorResponse](/boost-request-bot/python-sdk/docs/ErrorResponse.md)
 ** [GenericResponse](/boost-request-bot/python-sdk/docs/GenericResponse.md)
 ** [PatchStealCreditsRequest](/boost-request-bot/python-sdk/docs/PatchStealCreditsRequest.md)

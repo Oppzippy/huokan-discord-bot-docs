@@ -1,12 +1,13 @@
-# BoostRequestBackendSignupMessage
+# DetailedErrorResponse
 
-Discord channel and message id of the boost request signup message.
+Error response.
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channel_id** | **str** |  | 
-**message_id** | **str** |  | 
+**status_code** | **int** | HTTP status code. | 
+**error** | **str** | Name of HTTP status code. | 
+**details** | **{str: (bool, date, datetime, dict, float, int, list, str, none_type)}** | Description of what went wrong. | 
 **any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -1,6 +1,6 @@
 # boostrequestbotapi.BoostRequestsApi
 
-All URIs are relative to *https://boostrequestbot.oppzippy.com/v2*
+All URIs are relative to *https://boostrequestbot.oppzippy.com/v3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,10 +25,10 @@ from boostrequestbotapi.model.post_boost_requests_request import PostBoostReques
 from boostrequestbotapi.model.error_response import ErrorResponse
 from boostrequestbotapi.model.boost_request import BoostRequest
 from pprint import pprint
-# Defining the host is optional and defaults to https://boostrequestbot.oppzippy.com/v2
+# Defining the host is optional and defaults to https://boostrequestbot.oppzippy.com/v3
 # See configuration.py for a list of all supported configuration parameters.
 configuration = boostrequestbotapi.Configuration(
-    host = "https://boostrequestbot.oppzippy.com/v2"
+    host = "https://boostrequestbot.oppzippy.com/v3"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -51,13 +51,15 @@ with boostrequestbotapi.ApiClient(configuration) as api_client:
         backend_channel_id="backend_channel_id_example",
         message="message_example",
         price="price_example",
-        advertiser_cut="advertiser_cut_example",
-        advertiser_role_cuts={
-            "key": "key_example",
-        },
-        discount="discount_example",
-        preferred_advertiser_ids=[
-            "preferred_advertiser_ids_example",
+        preferred_claimer_ids=[
+            "preferred_claimer_ids_example",
+        ],
+        additional_embed_fields=[
+            EmbedField(
+                name="name_example",
+                value="value_example",
+                inline=True,
+            ),
         ],
     ) # PostBoostRequestsRequest |  (optional)
 
@@ -118,10 +120,10 @@ from boostrequestbotapi.api import boost_requests_api
 from boostrequestbotapi.model.error_response import ErrorResponse
 from boostrequestbotapi.model.boost_request import BoostRequest
 from pprint import pprint
-# Defining the host is optional and defaults to https://boostrequestbot.oppzippy.com/v2
+# Defining the host is optional and defaults to https://boostrequestbot.oppzippy.com/v3
 # See configuration.py for a list of all supported configuration parameters.
 configuration = boostrequestbotapi.Configuration(
-    host = "https://boostrequestbot.oppzippy.com/v2"
+    host = "https://boostrequestbot.oppzippy.com/v3"
 )
 
 # The client must configure the authentication and authorization parameters

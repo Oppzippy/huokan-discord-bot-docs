@@ -1,11 +1,11 @@
 # UsersApi
 
-All URIs are relative to *https://boostrequestbot.oppzippy.com/v2*
+All URIs are relative to *https://boostrequestbot.oppzippy.com/v3*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getUserStealCredits**](UsersApi.md#getUserStealCredits) | **GET** /users/{userId}/stealCredits | 
-[**updateUserStealCredits**](UsersApi.md#updateUserStealCredits) | **PATCH** /users/{userId}/stealCredits | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**getUserStealCredits**](UsersApi.md#getUserStealCredits) | **GET** /users/{userId}/stealCredits |  |
+| [**updateUserStealCredits**](UsersApi.md#updateUserStealCredits) | **PATCH** /users/{userId}/stealCredits |  |
 
 
 <a name="getUserStealCredits"></a>
@@ -16,9 +16,9 @@ Method | HTTP request | Description
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userId** | **String**| User&#39;s discord id | [default to null]
+|Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **userId** | **String**| User&#39;s discord id | [default to null] |
 
 ### Return type
 
@@ -41,10 +41,10 @@ Name | Type | Description  | Notes
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userId** | **String**| User&#39;s discord id | [default to null]
- **PatchStealCreditsRequest** | [**PatchStealCreditsRequest**](../Models/PatchStealCreditsRequest.md)|  |
+|Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **userId** | **String**| User&#39;s discord id | [default to null] |
+| **PatchStealCreditsRequest** | [**PatchStealCreditsRequest**](../Models/PatchStealCreditsRequest.md)|  | |
 
 ### Return type
 

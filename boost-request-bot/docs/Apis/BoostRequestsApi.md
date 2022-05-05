@@ -1,11 +1,11 @@
 # BoostRequestsApi
 
-All URIs are relative to *https://boostrequestbot.oppzippy.com/v2*
+All URIs are relative to *https://boostrequestbot.oppzippy.com/v3*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createBoostRequest**](BoostRequestsApi.md#createBoostRequest) | **POST** /boostRequests | 
-[**getBoostRequest**](BoostRequestsApi.md#getBoostRequest) | **GET** /boostRequests/{boostRequestId} | 
+| Method | HTTP request | Description |
+|------------- | ------------- | -------------|
+| [**createBoostRequest**](BoostRequestsApi.md#createBoostRequest) | **POST** /boostRequests |  |
+| [**getBoostRequest**](BoostRequestsApi.md#getBoostRequest) | **GET** /boostRequests/{boostRequestId} |  |
 
 
 <a name="createBoostRequest"></a>
@@ -16,9 +16,9 @@ Method | HTTP request | Description
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **PostBoostRequestsRequest** | [**PostBoostRequestsRequest**](../Models/PostBoostRequestsRequest.md)|  | [optional]
+|Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **PostBoostRequestsRequest** | [**PostBoostRequestsRequest**](../Models/PostBoostRequestsRequest.md)|  | [optional] |
 
 ### Return type
 
@@ -41,9 +41,9 @@ Name | Type | Description  | Notes
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **boostRequestId** | **UUID**| Boost request UUID | [default to null]
+|Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **boostRequestId** | **UUID**| Boost request UUID | [default to null] |
 
 ### Return type
 
