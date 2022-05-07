@@ -1,4 +1,4 @@
-# PostBoostRequestsRequest
+# BoostRequestPartial
 
 
 ## Properties
@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **price** | **str** | Price of the boost request in copper. This is a 64 bit integer represented as a string. | [optional] 
 **preferred_claimer_ids** | **[str]** | If provided, only claimers listed here will be eligible to accept the boost request. | [optional] 
 **additional_embed_fields** | [**[EmbedField]**](EmbedField.md) | Extra message embed fields to be added onto the end of the boost request. | [optional] 
+**name_visibility** | **str** | Control when names will be displayed or hidden. Defaults to dms only. SHOW is not implemented and will behave the same as dms only. | [optional] 
 **any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -21,7 +21,7 @@ Method | HTTP request | Description
 import time
 import boostrequestbotapi
 from boostrequestbotapi.api import boost_requests_api
-from boostrequestbotapi.model.post_boost_requests_request import PostBoostRequestsRequest
+from boostrequestbotapi.model.boost_request_partial import BoostRequestPartial
 from boostrequestbotapi.model.error_response import ErrorResponse
 from boostrequestbotapi.model.boost_request import BoostRequest
 from pprint import pprint
@@ -46,7 +46,7 @@ configuration.api_key['ApiKeyAuth'] = 'YOUR_API_KEY'
 with boostrequestbotapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = boost_requests_api.BoostRequestsApi(api_client)
-    post_boost_requests_request = PostBoostRequestsRequest(
+    boost_request_partial = BoostRequestPartial(
         requester_id="requester_id_example",
         backend_channel_id="backend_channel_id_example",
         message="message_example",
@@ -61,12 +61,13 @@ with boostrequestbotapi.ApiClient(configuration) as api_client:
                 inline=True,
             ),
         ],
-    ) # PostBoostRequestsRequest |  (optional)
+        name_visibility="SHOW",
+    ) # BoostRequestPartial |  (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        api_response = api_instance.create_boost_request(post_boost_requests_request=post_boost_requests_request)
+        api_response = api_instance.create_boost_request(boost_request_partial=boost_request_partial)
         pprint(api_response)
     except boostrequestbotapi.ApiException as e:
         print("Exception when calling BoostRequestsApi->create_boost_request: %s\n" % e)
@@ -77,7 +78,7 @@ with boostrequestbotapi.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_boost_requests_request** | [**PostBoostRequestsRequest**](PostBoostRequestsRequest.md)|  | [optional]
+ **boost_request_partial** | [**BoostRequestPartial**](BoostRequestPartial.md)|  | [optional]
 
 ### Return type
 

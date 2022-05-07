@@ -17,12 +17,12 @@ All URIs are relative to *https://boostrequestbot.oppzippy.com/v3*
 ## Documentation for Models
 
  - [BoostRequest](./Models/BoostRequest.md)
+ - [BoostRequestPartial](./Models/BoostRequestPartial.md)
  - [DetailedErrorResponse](./Models/DetailedErrorResponse.md)
  - [EmbedField](./Models/EmbedField.md)
  - [ErrorResponse](./Models/ErrorResponse.md)
  - [GenericResponse](./Models/GenericResponse.md)
  - [PatchStealCreditsRequest](./Models/PatchStealCreditsRequest.md)
- - [PostBoostRequestsRequest](./Models/PostBoostRequestsRequest.md)
  - [UserStealCredits](./Models/UserStealCredits.md)
 
 

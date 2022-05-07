@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **is_claimer_selected** | **bool** |  | 
 **message** | **str** | What is being requested | 
 **created_at** | **datetime** |  | 
+**name_visibility** | **str** | Control when names will be displayed or hidden. Defaults to dms only. SHOW is not implemented and will behave the same as dms only. | 
 **price** | **str** | Price of the boost request in copper. This is a 64 bit integer represented as a string. | [optional] 
 **preferred_claimer_ids** | **[str]** | If preferredClaimerIds is defined, only claimers listed here will be eligible to accept the boost request. | [optional] 
 **additional_embed_fields** | [**[EmbedField]**](EmbedField.md) | Extra message embed fields to be added onto the end of the boost request. | [optional] 

@@ -10,7 +10,7 @@ All URIs are relative to *https://boostrequestbot.oppzippy.com/v3*
 
 <a name="createBoostRequest"></a>
 # **createBoostRequest**
-> BoostRequest createBoostRequest(PostBoostRequestsRequest)
+> BoostRequest createBoostRequest(BoostRequestPartial)
 
 
 
@@ -18,7 +18,7 @@ All URIs are relative to *https://boostrequestbot.oppzippy.com/v3*
 
 |Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **PostBoostRequestsRequest** | [**PostBoostRequestsRequest**](../Models/PostBoostRequestsRequest.md)|  | [optional] |
+| **BoostRequestPartial** | [**BoostRequestPartial**](../Models/BoostRequestPartial.md)|  | [optional] |
 
 ### Return type
 
