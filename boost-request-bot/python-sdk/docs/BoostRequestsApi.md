@@ -62,6 +62,7 @@ with boostrequestbotapi.ApiClient(configuration) as api_client:
             ),
         ],
         name_visibility="SHOW",
+        dont_pick_claimer=True,
     ) # BoostRequestPartial |  (optional)
 
     # example passing only required values which don't have defaults set

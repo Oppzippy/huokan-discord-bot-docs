@@ -4,6 +4,8 @@
 ** [BoostRequest](/boost-request-bot/python-sdk/docs/BoostRequest.md)
 ** [BoostRequestPartial](/boost-request-bot/python-sdk/docs/BoostRequestPartial.md)
 ** [BoostRequestsApi](/boost-request-bot/python-sdk/docs/BoostRequestsApi.md)
+** [BoostRequestSignupCollection](/boost-request-bot/python-sdk/docs/BoostRequestSignupCollection.md)
+** [BoostRequestSignupCollectionSignups](/boost-request-bot/python-sdk/docs/BoostRequestSignupCollectionSignups.md)
 ** [DetailedErrorResponse](/boost-request-bot/python-sdk/docs/DetailedErrorResponse.md)
 ** [EmbedField](/boost-request-bot/python-sdk/docs/EmbedField.md)
 ** [ErrorResponse](/boost-request-bot/python-sdk/docs/ErrorResponse.md)

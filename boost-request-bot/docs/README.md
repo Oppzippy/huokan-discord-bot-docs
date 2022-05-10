@@ -18,6 +18,8 @@ All URIs are relative to *https://boostrequestbot.oppzippy.com/v3*
 
  - [BoostRequest](./Models/BoostRequest.md)
  - [BoostRequestPartial](./Models/BoostRequestPartial.md)
+ - [BoostRequestSignupCollection](./Models/BoostRequestSignupCollection.md)
+ - [BoostRequestSignupCollection_signups](./Models/BoostRequestSignupCollection_signups.md)
  - [DetailedErrorResponse](./Models/DetailedErrorResponse.md)
  - [EmbedField](./Models/EmbedField.md)
  - [ErrorResponse](./Models/ErrorResponse.md)

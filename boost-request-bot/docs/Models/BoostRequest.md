@@ -13,7 +13,8 @@
 | **additionalEmbedFields** | [**List**](EmbedField.md) | Extra message embed fields to be added onto the end of the boost request. | [optional] [default to null] |
 | **createdAt** | **Date** |  | [default to null] |
 | **claimerSelectedAt** | **Date** |  | [optional] [default to null] |
-| **nameVisibility** | **String** | Control when names will be displayed or hidden. Defaults to dms only. SHOW is not implemented and will behave the same as dms only. | [default to null] |
+| **nameVisibility** | **String** | Control when names will be displayed or hidden. Defaults to dms only. SHOW is not implemented and will behave the same as dms only. Acceptable values include SHOW_IN_DMS_ONLY and HIDE. | [default to null] |
+| **dontPickClaimer** | **Boolean** | Instead of picking a claimer, a list of signups will be sent to the webhook. See webhook documentation for more info. | [optional] [default to null] |
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
